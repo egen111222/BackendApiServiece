@@ -18,6 +18,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^(?P<pk>\d+)', MasterRud.as_view(), name='master-rud'),
+    url(r'^<pk>', MasterRud.as_view(), name='master-rud'),
     url(r'', MasterApi.as_view(), name='master-create'),
 ]
+ 
